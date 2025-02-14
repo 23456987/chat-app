@@ -12,7 +12,7 @@ function App() {
     const [darkMode, setDarkMode] = useState(false); // 🌙 Dark Mode State
 
     useEffect(() => {
-      axios.get("http://localhost:8080/api/chat")
+      axios.get("https://chatapp-7hld.onrender.com/api/chat")
           .then((res) => setMessages(res.data))
           .catch((err) => console.error("Error fetching messages:", err));
   
